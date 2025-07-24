@@ -40,6 +40,8 @@
 
 `kubectl get secret`
 
+`kubectl get configmap`
+
 `kubectl create deployment nginx-depl --image=nginx`
 
 `kubectl get deployment`
@@ -122,3 +124,6 @@ They need to be in base64 format
 
 `kubectl create namespace my-namespace`
 Or i can create it with a namespace configuration file
+
+`kubectl api-resources --namespaced=false`
+To list all components that have no namespace

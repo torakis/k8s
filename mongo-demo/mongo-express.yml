@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongo-express
+  namespace: mongo-demo
   labels:
     app: mongo-express
 spec:
@@ -50,6 +51,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongo-express-service
+  namespace: mongo-demo
 spec:
   selector:
     app: mongo-express
