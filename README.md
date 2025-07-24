@@ -21,6 +21,12 @@ minikube version
 kubectl version --client
 ```
 
+Enable ingress:
+
+```bash
+minikube addons enable ingress
+```
+
 ---
 
 ## 🚀 Start a Minikube Cluster
@@ -253,6 +259,32 @@ List non-namespaced API resources:
 
 ```bash
 kubectl api-resources --namespaced=false
+```
+
+---
+
+## Ingress Controller
+
+```bash
+kubectl get ingress -n mongo-demo
+```
+
+To edit the hosts for local address
+
+```bash
+sudo nano /etc/hosts
+```
+
+add this at end of file and save
+
+```bash
+127.0.0.1 mongo.local
+```
+
+start minikube tunnel
+
+```bash
+minikube tunnel
 ```
 
 ---
