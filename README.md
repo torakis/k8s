@@ -287,6 +287,8 @@ start minikube tunnel
 minikube tunnel
 ```
 
+TODO: add tls for https
+
 ---
 
 ## 🧼 Cleanup
